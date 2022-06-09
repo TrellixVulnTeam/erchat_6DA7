@@ -67,8 +67,8 @@ if (ifItIsMethod('post')) {
                         <div class="text-center">
                             <?php if (!isset($emailSend)): ?>
                                 <h3><i class="fa fa-lock fa-4x"></i></h3>
-                                <h2 class="text-center">Forgot Password?</h2>
-                                <p>You can reset your password here.</p>
+                                <h2 class="text-center">رمزعبور را فراموش کرده اید؟</h2>
+                                <p>برای بازیابی ایمیل خود را در این قسمت وارد کنید</p>
 
                                 <div class="panel-body">
 
@@ -77,14 +77,14 @@ if (ifItIsMethod('post')) {
                                             <div class="input-group">
                                             <span class="input-group-addon"><i
                                                         class="glyphicon glyphicon-envelope color-blue"></i></span>
-                                                <input id="email" name="email" placeholder="email address"
+                                                <input id="email" name="email" placeholder="ایمیل"
                                                        class="form-control" type="email">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <input name="recover-submit" class="btn btn-lg btn-primary btn-block"
-                                                   value="Reset Password" type="submit">
+                                                   value="بازیابی رمز عبور" type="submit">
                                         </div>
 
                                         <input type="hidden" class="hide" name="token" id="token" value="">
@@ -93,7 +93,7 @@ if (ifItIsMethod('post')) {
                                 </div><!-- Body-->
 
                             <?php else: ?>
-                                <h4>please check your email</h4>
+                                <h4>ایمیل خود را چک کنید</h4>
                             <?php endif; ?>
                         </div>
                     </div>
