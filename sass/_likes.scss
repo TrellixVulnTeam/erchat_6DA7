@@ -1,0 +1,23 @@
+.like_form--style {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.iframe_like {
+  background: transparent;
+  width: 3.5rem;
+  height: 2.8rem;
+}
+
+.like_button {
+  border: none;
+  background: transparent;
+  font-size: 2.1rem;
+}
+
+.like_value {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+}

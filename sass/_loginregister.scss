@@ -1,0 +1,175 @@
+.welcome {
+  background-image: url(../images/bodyback.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.form-container {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-size: 1rem;
+  font-family: "vazir";
+}
+
+.form-box {
+  z-index: 10;
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.5);
+  width: 35rem;
+  padding: 5rem 4rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.form-box h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  /* font-weight: bold; */
+}
+
+.form-box .field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 2.5rem;
+}
+
+.form-box .field.active {
+  border-bottom: 2px solid #0065ff;
+  transition: 0.3s ease;
+}
+
+.form-box .field input {
+  direction: ltr;
+  text-align: right;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+  padding-right: 0.8rem;
+}
+
+.form-box .field span {
+  color: #5f5c5c;
+  font-size: 1.7rem;
+  padding-bottom: 0.5rem;
+}
+
+.form-box .field.active span {
+  color: #0065ff;
+  transition: 0.3s ease;
+}
+
+.form-box .field input::placeholder {
+  color: #868282;
+  font-size: 1.16rem;
+  font-family: "vazir";
+}
+
+.eye-btn {
+  cursor: pointer;
+  /* transition: all 0.3s ease; */
+}
+
+.eye-btn span:hover {
+  color: #0065ff;
+  transition: 0.3s ease;
+}
+
+.forgot-link {
+  /* text-align: right; */
+  /* transform: translateY(10px); */
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.forgot-link a {
+  font-family: "vazir";
+  color: #438bf7;
+  font-size: 1.15rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.forgot-link a:hover {
+  color: #0065ff;
+}
+
+.submit-btn {
+  background-color: #0065ff;
+  font-family: "vazir";
+  letter-spacing: 0.6px;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 120px;
+  padding: 1rem 3rem;
+  border-radius: 0.3rem;
+  font-size: 1.24rem;
+  font-weight: 500;
+  margin-top: 2.2rem;
+  cursor: pointer;
+  /* float: left; */
+}
+
+.link-to-sign-up,
+.link-to-sign-in {
+  text-align: right;
+  transform: translateY(40px);
+}
+
+.link-to-sign-up:last-of-type,
+.link-to-sign-in:last-of-type {
+  margin-bottom: 0.6rem;
+}
+
+.link-to-sign-up a,
+.link-to-sign-in a {
+  text-decoration: none;
+  /* border-bottom: 1px solid #0065ff; */
+  font-family: "vazir";
+  font-size: 1.1rem;
+  color: #868282;
+  transition: all 0.3s ease;
+}
+
+.link-to-sign-up a:hover,
+.link-to-sign-in a:hover {
+  color: #0065ff;
+}
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(17rem);
+  line-height: 1.8;
+}
+
+.welcome-text--paragraph {
+  font-family: "ordibehesht";
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+.welcome-text--small {
+  font-family: "ordibehesht";
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+
+.register-error {
+  color: #dc2f02;
+  margin-bottom: 2rem;
+  font-family: "nazanin";
+  font-size: 1.4rem;
+  font-weight: bold;
+}

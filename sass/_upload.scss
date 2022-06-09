@@ -1,0 +1,118 @@
+.cropping {
+    margin: 4rem auto !important;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.label-file {
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;
+    background-color: #f9c74f;
+    border-radius: .4rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        background-color: #ffb703;
+    }
+
+    span {
+        margin-left: .29rem;
+        color: #353535;
+    }
+
+    small {
+        font-family: "vazir";
+        font-size: 1rem;
+    }
+}
+
+.profile-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    transform: translate(50%, -10%);
+    width: 65%;
+    height: 15rem;
+    // margin: 3rem auto;
+    background-color: #34495e;
+    border-radius: .6rem;
+
+    &--select {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2.9rem 0;
+
+        p {
+            font-family: "vazir";
+            font-size: 1.2rem;
+            color: #fff;
+            margin-top: 1rem;
+        }
+    }
+
+    &--submit {
+        border: none;
+        width: 27rem;
+        font-family: "vazir";
+        font-size: 1.4rem;
+        padding: .7rem 0;
+        border-radius: .4rem;
+        transition: all .2s;
+
+        &:hover {
+            background-color: #e7e7e7;
+        }
+    }
+}
+
+.text-side {
+    margin-top: 8rem !important;
+
+    p {
+        font-family: "vazir";
+        color: #3e3e3e !important;
+
+        span {
+            position: absolute;
+            font-size: 1.24rem !important;
+            margin-top: -.5rem !important;
+            color: #4e4e4e !important;
+        }
+    }
+}
+
+.save-btn,
+.cancel-btn {
+    font-family: "vazir";
+    font-size: 1.2rem;
+    width: 17rem;
+    margin-right: -8rem;
+    margin-top: 6.6rem;
+    padding: .65rem 0;
+    border: none;
+    border-radius: .4rem;
+}
+
+.save-btn {
+    background-color: #3a86ff;
+    color: #f1f1f1;
+    letter-spacing: .7px;
+}
+
+.cancel-btn {
+    background-color: #ff595e;
+    color: #f1f1f1;
+}
+
+.jcrop-holder {
+    max-height: 333px !important;
+}

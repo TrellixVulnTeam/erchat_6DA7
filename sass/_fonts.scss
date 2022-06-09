@@ -1,0 +1,39 @@
+/* Vazir */
+@font-face {
+  font-family: "vazir";
+  src: url(../css/fonts/vazir/Vazir-Bold-FD-WOL.ttf) format("truetype"),
+    url(../css/fonts/vazir/Vazir-Bold.ttf) format("truetype"),
+    url(../css/fonts/vazir/Vazir-Light.ttf) format("truetype"),
+    url(../css/fonts/vazir/Vazir-Medium.ttf) format("truetype"),
+    url(../css/fonts/vazir/Vazir.ttf) format("truetype");
+}
+
+/* Lalezar */
+@font-face {
+  font-family: "lalezar";
+  src: url(../css/fonts/lalezar/Lalezar-Regular.ttf) format("truetype");
+}
+
+/* Ordibehesht */
+@font-face {
+  font-family: "ordibehesht";
+  src: url(../css/fonts/Aordibehesht/Ordibeheshtshablon.ttf) format("truetype");
+}
+
+/* Nazanin */
+@font-face {
+  font-family: "nazanin";
+  src: url(../css/fonts/Fnazanin/Far_Nazanin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "bnazanin";
+  src: url(../css/fonts/Bnazanin/B-NAZANIN.ttf) format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+@font-face {
+  font-family: "yekan";
+  src: url(../css/fonts/Byekan/Yekan.ttf) format("truetype");
+}

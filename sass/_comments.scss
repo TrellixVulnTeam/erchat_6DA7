@@ -1,0 +1,94 @@
+#comment_form {
+  display: flex;
+  align-items: center;
+}
+
+.iframe-style {
+  width: 100%;
+  max-height: 25rem;
+  margin-top: 2rem;
+}
+
+.form_cont {
+  width: 100%;
+  display: flex;
+}
+
+.comment_section {
+  padding: 1.4rem 1rem 0 1rem;
+  // text-align: right;
+  // direction: ltr;
+}
+
+.text_com {
+  width: 87%;
+  height: 2.7rem;
+  font-size: 1.38rem;
+  font-family: "nazanin", sans-serif;
+  font-weight: bold;
+  text-align: right;
+  direction: ltr;
+}
+
+.btn_send_com {
+  padding: 0.7rem 2rem;
+  font-family: "vazir";
+  margin-right: 1rem;
+}
+
+.comment_alert {
+  font-family: "nazanin";
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  &--accept {
+    color: #43aa8b;
+  }
+
+  &--reject {
+    color: #ff5252;
+  }
+}
+
+.reply_user--detail {
+  display: flex;
+  align-items: flex-start;
+  // margin-bottom: 1rem;
+}
+
+.reply_usertime {
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+
+.reply_user {
+  font-family: "Roboto", "vazir", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  // font-weight: bold;
+  // color: #43aa8b;
+}
+
+.reply_time {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  direction: ltr;
+  // color: #43aa8b;
+}
+
+.reply_body {
+  direction: ltr;
+  text-align: right;
+  font-family: "bnazanin", "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nocomment {
+  text-align: center;
+  font-family: "bnazanin";
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 4rem;
+}

@@ -1,0 +1,4 @@
+RewriteEngine On
+#RewriteRule ^(index|register)$ $1.php [NC, L]
+RewriteRule ^([a-zA-Z0-9_-]+)$ profile.php?username=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ profile.php?username=$1

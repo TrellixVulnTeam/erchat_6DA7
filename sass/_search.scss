@@ -1,0 +1,78 @@
+.textRe {
+    margin: 2rem 10rem 0 0;
+    width: 85%;
+
+    p {
+        font-family: "vazir";
+        letter-spacing: .4px;
+    }
+
+    a {
+        color: #464646;
+        font-family: "vazir";
+    }
+}
+
+
+.search_result {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    background-color: #f5f8f8;
+    border-bottom: 1px solid #dedede;
+    padding: 1rem;
+
+    a {
+        display: flex;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+
+        :first-child {
+            color: #6e6e6e;
+            font-size: 1.29rem;
+        }
+
+        :last-child {
+            direction: ltr;
+            font-size: 1.2rem;
+            // margin-right: 1rem;
+        }
+
+        p {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.idResultLast {
+    margin-right: 2.6rem !important;
+    transition: all .2s;
+}
+
+.error-Sr{
+    width: 40%;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.errorDet {
+    font-family: "vazir";
+}
+
+.search-rimg {
+    width: 12rem;
+    border-radius: 1rem;
+}
+
+.mutualReSearch {
+    margin-right: 1.8rem;
+}
+
+.searchResultBtn {
+    margin-right: 60rem;
+    // position: absolute;
+    // margin-right: 56rem;
+    // margin-top: -2.5rem;
+
+}
