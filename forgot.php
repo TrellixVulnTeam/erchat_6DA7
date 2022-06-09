@@ -1,6 +1,7 @@
 <?php use PHPMailer\PHPMailer\PHPMailer; ?>
 <?php include "vendors/db.php" ?>
 <?php include "vendors/header.php" ?>
+<?php ch_title("بازیابی کلمه عبور") ?>
 <?php
 require "vendor/autoload.php";
 require "vendor/phpmailer/phpmailer/src/PHPMailer.php";
@@ -56,14 +57,14 @@ if (ifItIsMethod('post')) {
 ?>
 
 
-<div class="container">
+<div class="container cont-style">
     <div class="form-gap"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <div class="text-center">
+                        <div class="text-center text-c--style">
                             <?php if (!isset($emailSend)): ?>
                                 <h3><i class="fa fa-lock fa-4x"></i></h3>
                                 <h2 class="text-center">رمزعبور را فراموش کرده اید؟</h2>
@@ -73,7 +74,7 @@ if (ifItIsMethod('post')) {
 
                                     <form id="register-form" role="form" autocomplete="off" class="form" method="post">
                                         <div class="form-group">
-                                            <div class="input-group">
+                                            <div class="input-group ig-style">
                                             <span class="input-group-addon"><i
                                                         class="glyphicon glyphicon-envelope color-blue"></i></span>
                                                 <input id="email" name="email" placeholder="آدرس ایمیل"
@@ -82,7 +83,7 @@ if (ifItIsMethod('post')) {
                                         </div>
 
                                         <div class="form-group">
-                                            <input name="recover-submit" class="btn btn-lg btn-primary btn-block"
+                                            <input name="recover-submit" class="btn btn-lg btn-primary btn-block reset-pass--btn"
                                                    value="بازیابی رمز عبور" type="submit">
                                         </div>
 
