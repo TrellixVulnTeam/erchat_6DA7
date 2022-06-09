@@ -55,9 +55,8 @@ if (ifItIsMethod('post')) {
 }
 ?>
 
-<!-- Page Content -->
-<div class="container">
 
+<div class="container">
     <div class="form-gap"></div>
     <div class="container">
         <div class="row">
@@ -77,7 +76,7 @@ if (ifItIsMethod('post')) {
                                             <div class="input-group">
                                             <span class="input-group-addon"><i
                                                         class="glyphicon glyphicon-envelope color-blue"></i></span>
-                                                <input id="email" name="email" placeholder="ایمیل"
+                                                <input id="email" name="email" placeholder="آدرس ایمیل"
                                                        class="form-control" type="email">
                                             </div>
                                         </div>
@@ -102,4 +101,4 @@ if (ifItIsMethod('post')) {
         </div>
     </div>
     <?php include "vendors/footer.php"; ?>
-</div> <!-- /.container -->
+</div>
