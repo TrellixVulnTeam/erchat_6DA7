@@ -1586,3 +1586,30 @@ input[type="file"] {
     text-align: center; }
   .closeAc-con form {
     text-align: center; }
+
+.cont-style {
+  direction: rtl;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.text-c--style h2,
+.text-c--style p {
+  font-family: "nazanin"; }
+
+.text-c--style h3 i {
+  font-size: 5rem !important;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 2rem; }
+
+.ig-style {
+  direction: ltr;
+  margin-top: 2rem; }
+  .ig-style input {
+    text-align: right; }
+
+.reset-pass--btn {
+  font-family: "nazanin";
+  font-size: 1.6rem;
+  letter-spacing: .4px; }

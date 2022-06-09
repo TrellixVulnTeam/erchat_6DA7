@@ -1,0 +1,36 @@
+.cont-style {
+    direction: rtl;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-c--style {
+    h2,
+    p {
+        font-family: "nazanin";
+    }
+  h3 {
+    i {
+      font-size: 5rem !important;
+      color: rgba(0, 0, 0, .7);
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.ig-style {
+    direction: ltr;
+    margin-top: 2rem;
+
+    input   {
+        text-align: right;
+    }
+}
+
+.reset-pass--btn {
+    font-family: "nazanin";
+    font-size: 1.6rem;
+    letter-spacing: .4px;
+}
