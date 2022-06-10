@@ -102,6 +102,13 @@ textarea {
   align-items: center;
   justify-content: space-between;
   padding: 0 4rem; }
+  @media only screen and (max-width: 480px) {
+    .welcome {
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
 
 .form-container {
   /* display: flex; */
@@ -118,11 +125,13 @@ textarea {
   padding: 5rem 4rem;
   border-radius: 0.5rem;
   overflow: hidden; }
+  @media only screen and (min-width: 481px) and (max-width: 573px) {
+    .form-box {
+      margin: 0 5.4rem; } }
 
 .form-box h2 {
   font-size: 2.2rem;
-  margin-bottom: 1.2rem;
-  /* font-weight: bold; */ }
+  margin-bottom: 1.2rem; }
 
 .form-box .field {
   display: flex;
@@ -228,16 +237,49 @@ textarea {
   flex-direction: column;
   transform: translateX(17rem);
   line-height: 1.8; }
+  @media only screen and (max-width: 480px) {
+    .welcome-text {
+      display: none; } }
+  @media only screen and (min-width: 574px) and (max-width: 768px) {
+    .welcome-text {
+      width: 100%;
+      text-align: center;
+      transform: translate(75%, -40rem);
+      background-color: rgba(255, 255, 255, 0.3); } }
 
 .welcome-text--paragraph {
   font-family: "ordibehesht";
   font-size: 5rem;
   color: #ffffff; }
+  @media only screen and (min-width: 481px) and (max-width: 573px) {
+    .welcome-text--paragraph {
+      width: max-content;
+      font-size: 3.5rem;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      filter: blur();
+      position: absolute;
+      top: -45rem;
+      left: 0;
+      transform: translateX(-34%);
+      padding: 1rem 4rem;
+      border-radius: 1rem; } }
+  @media only screen and (min-width: 574px) and (max-width: 768px) {
+    .welcome-text--paragraph {
+      width: max-content; } }
 
 .welcome-text--small {
   font-family: "ordibehesht";
   font-size: 2.4rem;
   color: #ffffff; }
+  @media only screen and (min-width: 481px) and (max-width: 573px) {
+    .welcome-text--small {
+      display: none; } }
+  @media only screen and (min-width: 574px) and (max-width: 768px) {
+    .welcome-text--small {
+      display: none; } }
 
 .register-error {
   color: #dc2f02;

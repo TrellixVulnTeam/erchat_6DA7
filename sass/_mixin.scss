@@ -1,0 +1,36 @@
+@mixin respond($breakpoint) {
+
+    // Phone
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    }
+
+    // Tablet
+    @if $breakpoint == tablet-1 {
+        @media only screen and (min-width: 481px) and (max-width: 573px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == tablet-2 {
+        @media only screen and (min-width: 574px) and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    // Desktop
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+            @content;
+        }
+    }
+
+    // Large Desktop
+    @if $breakpoint == largeDesktop {
+        @media only screen and (min-width: 993px) and (max-width: 1200px) {
+            @content;
+        }
+    }
+}
