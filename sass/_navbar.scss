@@ -23,6 +23,10 @@ nav {
     position: absolute;
     right: 15%;
 
+    @include respond(phone) {
+      display: none;
+    }
+
     img {
       width: 38px;
       border-radius: 50%;
@@ -59,6 +63,12 @@ nav {
     left: 25%;
     top: 2rem;
 
+    @include respond(phone) {
+      width: 16rem;
+      left: 45%;
+      margin-top: -.5rem;
+    }
+
     input {
       font-size: 1.5rem;
       width: 100%;
@@ -91,7 +101,16 @@ nav {
     align-items: center;
     justify-content: space-between;
     border-radius: 1rem;
-    transform: translateX(.6rem);
+    transform: translateX(0.6rem);
+
+    @include respond(phone) {
+      position: fixed;
+      top: 8rem;
+      margin: 0 auto;
+      box-shadow: 0 1rem 1rem;
+      z-index: 99999;
+      transform: translateX(-9%);
+    }
 
     &--icon {
       color: #343a40;
@@ -104,19 +123,18 @@ nav {
   }
 }
 
-
 // Message Dropdown:
 .dropdown_data_window {
   position: absolute;
   width: 26rem;
   // padding: .4rem 0 1rem 0;
-  border-radius: 0 0 .4rem .4rem;
+  border-radius: 0 0 0.4rem 0.4rem;
   right: 35.3rem;
   // top: 5.4rem;
   background-color: #f8f9fa;
-  box-shadow: 2px 2px 10px -4px rgba(0,0,0,0.78);
-  -webkit-box-shadow: 2px 2px 10px -4px rgba(0,0,0,0.78);
-  -moz-box-shadow: 2px 2px 10px -4px rgba(0,0,0,0.78);
+  box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.78);
+  -webkit-box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.78);
   z-index: 10;
   overflow: scroll;
 
@@ -125,73 +143,72 @@ nav {
   }
 }
 
-
 // Badges:
 .message_badge {
-    font-family: "Roboto";
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #fff;
-    background-color: red;
-    white-space: nowrap;
-    border-radius: 50%;
-    width: -1rem;
-    position: absolute;
-    vertical-align: baseline;
-    width: 1.4rem;
-    height: 1.4rem;
-    text-align: center;
-    right: 13.4rem;
-    top: .7rem;
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: red;
+  white-space: nowrap;
+  border-radius: 50%;
+  width: -1rem;
+  position: absolute;
+  vertical-align: baseline;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+  right: 13.4rem;
+  top: 0.7rem;
 }
 
 .notification_badge {
-    font-family: "Roboto";
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #fff;
-    background-color: red;
-    white-space: nowrap;
-    border-radius: 50%;
-    width: -1rem;
-    position: absolute;
-    vertical-align: baseline;
-    width: 1.4rem;
-    height: 1.4rem;
-    text-align: center;
-    right: 1.1rem;
-    top: .7rem;
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: red;
+  white-space: nowrap;
+  border-radius: 50%;
+  width: -1rem;
+  position: absolute;
+  vertical-align: baseline;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+  right: 1.1rem;
+  top: 0.7rem;
 }
 
 .request_badge {
-    font-family: "Roboto";
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #fff;
-    background-color: red;
-    white-space: nowrap;
-    border-radius: 50%;
-    width: -1rem;
-    position: absolute;
-    vertical-align: baseline;
-    width: 1.4rem;
-    height: 1.4rem;
-    text-align: center;
-    right: 5.1rem;
-    top: .7rem;
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: red;
+  white-space: nowrap;
+  border-radius: 50%;
+  width: -1rem;
+  position: absolute;
+  vertical-align: baseline;
+  width: 1.4rem;
+  height: 1.4rem;
+  text-align: center;
+  right: 5.1rem;
+  top: 0.7rem;
 }
 
 // Dropdown Notification:
 .resultDisplayNotification {
   display: flex;
-  padding: .5rem;
+  padding: 0.5rem;
   transform: translateX(1rem);
   width: 26rem;
   height: auto;
 
   img {
     width: 4.5rem;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
   }
 }
 
@@ -199,7 +216,7 @@ nav {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-right: .6rem;
+  margin-right: 0.6rem;
 }
 
 .timestamp_smaller {
@@ -214,8 +231,6 @@ nav {
   font-size: 1.1rem;
 }
 
-
-
 // Search Bar Style:
 .search_results {
   // display: none;
@@ -228,10 +243,17 @@ nav {
   left: 30.2rem;
   // border-bottom: 1px solid #6c757d;
   // background-color: #f8f9fa;
-  box-shadow: 2px 2px 10px -4px rgba(0,0,0,0.78);
-  -webkit-box-shadow: 2px 2px 10px -4px rgba(0,0,0,0.78);
-  -moz-box-shadow: 2px 2px 10px -4px rgba(0,0,0,0.78);
+  box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.78);
+  -webkit-box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.78);
   overflow-y: scroll;
+
+  @include respond(phone) {
+    position: absolute;
+    right: 0;
+    z-index: 9999999;
+}
+
   &::-webkit-scrollbar {
     width: 0;
   }
@@ -254,7 +276,7 @@ nav {
 
 .mvResult {
   font-family: "vazir";
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
   z-index: 10000;
   position: absolute;
   top: 34rem;
@@ -264,7 +286,13 @@ nav {
   padding: 1rem 6rem;
   text-align: center;
   width: 29.05rem;
-  transition: all .3s;
+  transition: all 0.3s;
+
+  @include respond(phone) {
+    position: absolute;
+    right: 0;
+    z-index: 9999999;
+  }
 
   &:hover {
     color: #fff;
@@ -274,7 +302,7 @@ nav {
 
 .searchImg {
   width: 7rem;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
 .mutualSstyle {
@@ -284,7 +312,7 @@ nav {
 .search-fl {
   font-family: "Roboto", sans-serif;
   font-size: 1.16rem;
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
   color: #a1a1a1;
 }
 
@@ -306,5 +334,5 @@ nav {
 .mutualText {
   font-family: "vazir" !important;
   color: #a1a1a1;
-  margin-right: .1rem;
+  margin-right: 0.1rem;
 }

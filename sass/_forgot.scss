@@ -4,6 +4,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
+  @include respond(tablet-1) {
+    width: 100%;
+  }
+
+  @include respond(tablet-2) {
+    width: 100%;
+  }
 }
 
 .text-c--style {

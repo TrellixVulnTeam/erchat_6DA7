@@ -308,6 +308,9 @@ nav {
     transform: translateX(16.2rem);
     position: absolute;
     right: 15%; }
+    @media only screen and (max-width: 480px) {
+      .nav-user {
+        display: none; } }
     .nav-user img {
       width: 38px;
       border-radius: 50%;
@@ -332,6 +335,11 @@ nav {
     position: absolute;
     left: 25%;
     top: 2rem; }
+    @media only screen and (max-width: 480px) {
+      .nav-search {
+        width: 16rem;
+        left: 45%;
+        margin-top: -.5rem; } }
     .nav-search input {
       font-size: 1.5rem;
       width: 100%;
@@ -358,6 +366,14 @@ nav {
     justify-content: space-between;
     border-radius: 1rem;
     transform: translateX(0.6rem); }
+    @media only screen and (max-width: 480px) {
+      .nav-taskbar {
+        position: fixed;
+        top: 8rem;
+        margin: 0 auto;
+        box-shadow: 0 1rem 1rem;
+        z-index: 99999;
+        transform: translateX(-9%); } }
     .nav-taskbar--icon {
       color: #343a40;
       transition: all 0.1s; }
@@ -367,7 +383,7 @@ nav {
 .dropdown_data_window {
   position: absolute;
   width: 26rem;
-  border-radius: 0 0 .4rem .4rem;
+  border-radius: 0 0 0.4rem 0.4rem;
   right: 35.3rem;
   background-color: #f8f9fa;
   box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.78);
@@ -393,7 +409,7 @@ nav {
   height: 1.4rem;
   text-align: center;
   right: 13.4rem;
-  top: .7rem; }
+  top: 0.7rem; }
 
 .notification_badge {
   font-family: "Roboto";
@@ -410,7 +426,7 @@ nav {
   height: 1.4rem;
   text-align: center;
   right: 1.1rem;
-  top: .7rem; }
+  top: 0.7rem; }
 
 .request_badge {
   font-family: "Roboto";
@@ -427,23 +443,23 @@ nav {
   height: 1.4rem;
   text-align: center;
   right: 5.1rem;
-  top: .7rem; }
+  top: 0.7rem; }
 
 .resultDisplayNotification {
   display: flex;
-  padding: .5rem;
+  padding: 0.5rem;
   transform: translateX(1rem);
   width: 26rem;
   height: auto; }
   .resultDisplayNotification img {
     width: 4.5rem;
-    border-radius: .4rem; }
+    border-radius: 0.4rem; }
 
 .tino {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-right: .6rem; }
+  margin-right: 0.6rem; }
 
 .timestamp_smaller {
   color: #6c757d;
@@ -467,6 +483,11 @@ nav {
   -webkit-box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.78);
   -moz-box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.78);
   overflow-y: scroll; }
+  @media only screen and (max-width: 480px) {
+    .search_results {
+      position: absolute;
+      right: 0;
+      z-index: 9999999; } }
   .search_results::-webkit-scrollbar {
     width: 0; }
 
@@ -482,7 +503,7 @@ nav {
 
 .mvResult {
   font-family: "vazir";
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
   z-index: 10000;
   position: absolute;
   top: 34rem;
@@ -492,14 +513,19 @@ nav {
   padding: 1rem 6rem;
   text-align: center;
   width: 29.05rem;
-  transition: all .3s; }
+  transition: all 0.3s; }
+  @media only screen and (max-width: 480px) {
+    .mvResult {
+      position: absolute;
+      right: 0;
+      z-index: 9999999; } }
   .mvResult:hover {
     color: #fff;
     background-color: #3a5bee; }
 
 .searchImg {
   width: 7rem;
-  border-radius: .6rem; }
+  border-radius: 0.6rem; }
 
 .mutualSstyle {
   margin-right: 1rem; }
@@ -507,7 +533,7 @@ nav {
 .search-fl {
   font-family: "Roboto", sans-serif;
   font-size: 1.16rem;
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
   color: #a1a1a1; }
 
 .searchU {
@@ -526,7 +552,7 @@ nav {
 .mutualText {
   font-family: "vazir" !important;
   color: #a1a1a1;
-  margin-right: .1rem; }
+  margin-right: 0.1rem; }
 
 aside {
   top: 0;
@@ -1491,7 +1517,7 @@ input[type="file"] {
   width: 85%; }
   .textRe p {
     font-family: "vazir";
-    letter-spacing: .4px; }
+    letter-spacing: 0.4px; }
   .textRe a {
     color: #464646;
     font-family: "vazir"; }
@@ -1519,7 +1545,7 @@ input[type="file"] {
 
 .idResultLast {
   margin-right: 2.6rem !important;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .error-Sr {
   width: 40%;
@@ -1635,6 +1661,15 @@ input[type="file"] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 480px) {
+    .cont-style {
+      width: 100%; } }
+  @media only screen and (min-width: 481px) and (max-width: 573px) {
+    .cont-style {
+      width: 100%; } }
+  @media only screen and (min-width: 574px) and (max-width: 768px) {
+    .cont-style {
+      width: 100%; } }
 
 .text-c--style h2,
 .text-c--style p {
