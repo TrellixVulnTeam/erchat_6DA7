@@ -38,7 +38,7 @@
         $num_requests = $user_obj->getNumberFriendRequests();
         ?>
 
-        <div class="nav-taskbar">
+        <div class="nav-taskbar animate__fadeIn">
 
             <a href="javascript:void(0);" onclick="getDropdownData('<?php echo $userLoggedIn; ?>', 'notification')">
                 <span class="material-icons-sharp nav-taskbar--icon"> notifications </span>
@@ -135,31 +135,47 @@
 </script>
 
 <script>
-var inputSearch = document.getElementById("nav-search--input");
-var searchingResult = document.querySelector(".search_results");
-var searchHid = document.querySelector(".searchHid");
-var body = document.createElement("body");
-var main = document.createElement("main");
-var resultDis = document.querySelector(".resultDisplay");
+    var inputSearch = document.getElementById("nav-search--input");
+    var searchingResult = document.querySelector(".search_results");
+    var searchHid = document.querySelector(".searchHid");
+    var body = document.createElement("body");
+    var main = document.createElement("main");
+    var resultDis = document.querySelector(".resultDisplay");
 
-inputSearch.addEventListener('click', function(){
-    searchingResult.classList.remove('hidden');
-    searchingResult.style.background = "#f8f9fa";
-    searchingResult.style.height = "28rem";
-    // searchingResult.style.shadow = "none";
-});
+    inputSearch.addEventListener('click', function() {
+        searchingResult.classList.remove('hidden');
+        searchingResult.style.background = "#f8f9fa";
+        searchingResult.style.height = "28rem";
+        // searchingResult.style.shadow = "none";
+    });
 
-body.addEventListener('click', function(){
-    searchingResult.classList.add('hidden');
-    searchingResult.style.height = "0";
-    searchingResult.style.background = "none";
-    searchHid.classList.add('hidden');
-    resultDis.classList.add('hidden');
-    searchingResult.style.display = "none";
-});
+    body.addEventListener('click', function() {
+        searchingResult.classList.add('hidden');
+        searchingResult.style.height = "0";
+        searchingResult.style.background = "none";
+        searchHid.classList.add('hidden');
+        resultDis.classList.add('hidden');
+        searchingResult.style.display = "none";
+    });
 
-main.addEventListener('click', function(){
-    searchingResult.classList.add('hidden');
-    searchingResult.style.display = "none";
-})
+    main.addEventListener('click', function() {
+        searchingResult.classList.add('hidden');
+        searchingResult.style.display = "none";
+    })
+</script>
+
+<!-- Show nav-taskbar after scrolling -->
+<script>
+    var taskShow = document.querySelector(".nav-taskbar");
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 100) {
+                taskShow.style.opacity = "1";
+                taskShow.style.visibility = "visible";
+                taskShow.style.position = "fixed";
+            } else {
+                taskShow.style.opacity = "0";
+                taskShow.style.visibility = "hidden";
+            }
+        });
 </script>

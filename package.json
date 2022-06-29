@@ -10,5 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "waypoints": "^4.0.1"
   }
 }

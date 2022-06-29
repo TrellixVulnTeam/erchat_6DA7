@@ -6,6 +6,10 @@ aside {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
+
+  @include respond(phone) {
+    flex-direction: row;
+  }
 }
 
 .user-profile {
@@ -20,10 +24,25 @@ aside {
   width: 20rem;
   padding: 1rem 1rem;
   margin: 3rem 2rem 0 0;
+
+  @include respond(phone) {
+    flex-direction: row;
+    position: absolute;
+    left: 62.5%;
+    transform: translateX(-50%);
+    height: 12rem;
+    width: 29rem;
+    z-index: 999999;
+  }
+
   &--img {
     img {
       border-radius: 0.8rem;
       width: 18rem;
+
+      @include respond(phone) {
+        width: 10rem;
+      }
     }
   }
 

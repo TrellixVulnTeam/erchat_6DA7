@@ -15,7 +15,7 @@ if (isset($_POST['post'])) {
         $imageName = $targetDir . uniqid() . basename($imageName);
         $imageFileType = pathinfo($imageName, PATHINFO_EXTENSION);
 
-        if ($_FILES['fileToUpload']['size'] > 10000000) {
+        if ($_FILES['fileToUpload']['size'] > 9999999999) {
             $errorMessage = "<p>متاسفانه حجم فایل بالاست</p>";
             $uploadOk = 0;
         }

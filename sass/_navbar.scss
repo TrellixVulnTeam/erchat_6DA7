@@ -1,6 +1,14 @@
 nav {
   width: 100%;
   background-color: #3a86ff;
+
+  @include respond(phone) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 36rem;
+  }
 }
 
 .nav {
@@ -11,8 +19,16 @@ nav {
   align-items: center;
   padding: 0.5rem 1.5rem;
 
+  @include respond(phone) {
+    width: inherit;
+  }
+
   img {
     object-fit: contain;
+
+    @include respond(phone) {
+      width: 8rem;
+    }
   }
 
   &-user {
@@ -66,7 +82,9 @@ nav {
     @include respond(phone) {
       width: 16rem;
       left: 45%;
-      margin-top: -.5rem;
+      margin-top: -0.5rem;
+      position: inherit;
+      margin-right: -5rem;
     }
 
     input {
@@ -104,12 +122,15 @@ nav {
     transform: translateX(0.6rem);
 
     @include respond(phone) {
-      position: fixed;
-      top: 8rem;
-      margin: 0 auto;
-      box-shadow: 0 1rem 1rem;
-      z-index: 99999;
-      transform: translateX(-9%);
+      position: absolute;
+      opacity: 0;
+      box-shadow: 2px 4px 12px -1px rgba(0, 0, 0, 0.35);
+      -webkit-box-shadow: 2px 4px 12px -1px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 2px 4px 12px -1px rgba(0, 0, 0, 0.35);
+      z-index: 9999999;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.4s;
     }
 
     &--icon {
@@ -252,7 +273,7 @@ nav {
     position: absolute;
     right: 0;
     z-index: 9999999;
-}
+  }
 
   &::-webkit-scrollbar {
     width: 0;
