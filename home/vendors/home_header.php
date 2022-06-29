@@ -29,6 +29,7 @@ if (isset($_SESSION['username'])) {
 
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css" />
     <link rel="stylesheet" type="text/css" href="../css/fontawesome-free-6.0.0-web/css/fontawesome.css">
     <link rel="stylesheet" type="text/css" href="../css/fontawesome-free-6.0.0-web/css/fontawesome.min.css">
@@ -37,6 +38,7 @@ if (isset($_SESSION['username'])) {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="js/bootbox.min.js"></script>
     <script src="js/first.js"></script>
